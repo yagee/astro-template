@@ -1,0 +1,30 @@
+{
+  "name": "topvideo-template",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "prettier": "prettier --check --ignore-unknown '**/*'",
+    "prettier:fix": "prettier --write --ignore-unknown '**/*'",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.1",
+    "astro": "^3.5.4",
+    "astro-relative-links": "^0.3.4",
+    "astro-typograf": "^2.0.0",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "postcss-media-minmax": "^5.0.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-sort-media-queries": "^5.2.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "prettier-plugin-astro": "^0.12.2"
+  }
+}
