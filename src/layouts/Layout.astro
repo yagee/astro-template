@@ -49,15 +49,18 @@ const { title } = Astro.props;
       white 60%
     );
   }
+
   html {
     font-family: system-ui, sans-serif;
     background: #13151a;
     background-size: 224px;
   }
+
   body {
     text-wrap: balance;
     text-wrap: pretty;
   }
+
   code {
     font-family:
       Menlo,
@@ -68,5 +71,15 @@ const { title } = Astro.props;
       Bitstream Vera Sans Mono,
       Courier New,
       monospace;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
   }
 </style>
