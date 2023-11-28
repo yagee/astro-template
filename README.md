@@ -12,6 +12,12 @@ pnpm i
 pnpm dev
 ```
 
+## Upgrade
+
+```sh
+pnpm dlx @astrojs/upgrade
+```
+
 ## Build
 
 ```sh
