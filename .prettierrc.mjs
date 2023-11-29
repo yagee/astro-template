@@ -5,13 +5,11 @@ export default {
     {
       files: '*.astro',
       options: {
-        parser: 'astro'
-      }
-    }
+        parser: 'astro',
+      },
+    },
   ],
-  // all this settings are nested from qvant config
+  // all this settings are nested from work config
   singleQuote: true, // default value is false
-  trailingComma: 'none', // default value is "all"
-  arrowParens: 'avoid', // default value is "always"
-  singleAttributePerLine: true // default value is false
+  singleAttributePerLine: true, // default value is false
 };

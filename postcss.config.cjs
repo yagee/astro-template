@@ -4,6 +4,6 @@ module.exports = {
     require('autoprefixer'),
     require('postcss-media-minmax'),
     require('postcss-sort-media-queries'),
-    require('cssnano')
-  ]
+    require('cssnano'),
+  ],
 };

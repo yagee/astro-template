@@ -5,5 +5,5 @@ import typograf from 'astro-typograf';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [typograf('p, h1, h2, h3, div, span'), relativeLinks()]
+  integrations: [typograf('p, h1, h2, h3, div, span'), relativeLinks()],
 });
