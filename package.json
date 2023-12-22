@@ -12,9 +12,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.3",
+    "@astrojs/check": "^0.3.4",
     "astro": "^4.0.7",
-    "astro-relative-links": "^0.3.5",
+    "astro-relative-links": "^0.3.6",
     "astro-typograf": "^2.0.0",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.2",
