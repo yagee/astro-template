@@ -5,6 +5,14 @@ module.exports = {
     require('autoprefixer'),
     require('postcss-media-minmax'),
     require('postcss-sort-media-queries'),
-    require('cssnano'),
+    require('postcss-combine-duplicated-selectors')({
+      removeDuplicatedProperties: true,
+      removeDuplicatedValues: false,
+    }),
+    require('cssnano')({
+      preset: 'advanced',
+      autoprefixer: false,
+    }),
+    require('postcss-reporter'),
   ],
 };

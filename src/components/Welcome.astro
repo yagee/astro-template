@@ -5,6 +5,8 @@ interface Props {
 }
 
 const { title, body } = Astro.props;
+
+import pic from './bald.png';
 ---
 
 <div class="card">
@@ -14,10 +16,31 @@ const { title, body } = Astro.props;
   <p>
     {body}
   </p>
+  <img
+    src={pic.src}
+    alt=""
+  />
 </div>
 
 <style>
+  h1 {
+    font-size: 20px;
+
+    @media screen and (width >= 375px) {
+      font-size: 22px;
+    }
+
+    @media screen and (width >= 414px) {
+      font-size: 24px;
+    }
+  }
+
   .card {
-    color: #fff;
+    color: rgb(var(--accent));
+    z-index: 5000;
+  }
+
+  .card {
+    color: green;
   }
 </style>
