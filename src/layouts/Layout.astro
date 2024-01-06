@@ -37,7 +37,11 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
+
 <style is:global>
+  @import '_reset.css';
+  /* @import '_reset.img.css'; */
+
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -50,51 +54,7 @@ const { title } = Astro.props;
     );
   }
 
-  *,
-  *::after,
-  *::before {
-    box-sizing: border-box;
-  }
-
-  html,
   body {
-    width: 100%;
-    height: 100%;
     margin: 0;
-    padding: 0;
-  }
-
-  html {
-    font-family: system-ui, sans-serif;
-    background: #13151a;
-    background-size: 224px;
-  }
-
-  body {
-    /* text-wrap: pretty; */
-    /* balance is little better */
-    text-wrap: balance;
-  }
-
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    font-style: italic;
-    background-repeat: no-repeat;
-    background-size: cover;
-    shape-margin: 1rem;
   }
 </style>
