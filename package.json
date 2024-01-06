@@ -1,7 +1,7 @@
 {
   "name": "astro-template",
   "type": "module",
-  "version": "4.0.4",
+  "version": "4.1.1",
   "scripts": {
     "prettier": "prettier --check --ignore-unknown '**/*'",
     "prettier:fix": "prettier --write --ignore-unknown '**/*'",
@@ -13,18 +13,23 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
-    "astro": "^4.0.8",
-    "astro-compress": "^2.2.5",
+    "astro": "^4.1.1",
     "astro-relative-links": "^0.3.6",
     "astro-typograf": "^2.0.0",
     "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.3",
+    "cssnano-preset-advanced": "^6.0.3",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-import": "^16.0.0",
     "postcss-media-minmax": "^5.0.0",
     "postcss-nested": "^6.0.1",
+    "postcss-reporter": "^7.0.5",
     "postcss-sort-media-queries": "^5.2.0",
+    "sharp": "^0.33.1",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "astro-compress": "github:astro-community/AstroCompress#no-sharp",
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.3"
   }
