@@ -9,10 +9,10 @@ module.exports = {
       removeDuplicatedProperties: true,
       removeDuplicatedValues: false,
     }),
+    // require('postcss-combine-media-query'),
     require('cssnano')({
       preset: 'advanced',
       autoprefixer: false,
     }),
-    require('postcss-reporter'),
   ],
 };
