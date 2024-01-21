@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
-    "astro": "^4.2.0",
+    "astro": "^4.2.1",
     "astro-relative-links": "^0.3.7",
     "astro-typograf": "^2.0.0",
     "autoprefixer": "^10.4.17",
@@ -31,6 +31,6 @@
   "devDependencies": {
     "astro-compress": "github:astro-community/AstroCompress#no-sharp",
     "prettier": "^3.2.4",
-    "prettier-plugin-astro": "^0.12.3"
+    "prettier-plugin-astro": "^0.13.0"
   }
 }
