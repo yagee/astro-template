@@ -11,8 +11,13 @@ module.exports = {
     }),
     // require('postcss-combine-media-query'),
     require('cssnano')({
-      preset: 'advanced',
-      autoprefixer: false,
+      preset: [
+        'advanced',
+        {
+          autoprefixer: false,
+          reduceIdents: false,
+        },
+      ],
     }),
   ],
 };

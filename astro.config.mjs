@@ -14,6 +14,9 @@ const terserOptions = {
 
 // https://astro.build/config
 export default defineConfig({
+  build: {
+    // inlineStylesheets: 'never',
+  },
   integrations: [
     typograf('p, h1, h2, h3, div, span'),
     relativeLinks(),
@@ -26,7 +29,14 @@ export default defineConfig({
           // removeEmptyAttributes: true,
           removeAttributeQuotes: false,
           minifyJS: terserOptions,
-          minifyCSS: false,
+          minifyCSS: {
+            level: 2,
+          },
+        },
+      },
+      CSS: {
+        csso: {
+          forceMediaMerge: true, // don't work because styles are inlined
         },
       },
       JavaScript: terserOptions,
