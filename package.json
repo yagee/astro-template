@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
-    "astro": "^4.2.1",
+    "astro": "^4.3.0",
     "astro-relative-links": "^0.3.7",
     "astro-typograf": "^2.0.0",
     "autoprefixer": "^10.4.17",
