@@ -1,51 +1,24 @@
 # Astro Template
 
-## Install
+## Commands
 
-```sh
-pnpm i
-```
-
-## Development
-
-```sh
-pnpm dev
-```
+| Command             | Action                                            |
+| :------------------ | :------------------------------------------------ |
+| `pnpm i`            | Installs dependencies                             |
+| `pnpm dev`          | Starts local dev server at `localhost:4321`       |
+| `pnpm build`        | Build your production site to `./dist/`           |
+| `pnpm preview`      | Preview your build locally, before deploying      |
+| `pnpm optimize`     | Optimize build with Jampack                       |
+| `pnpm sync`         | Generates TypeScript types for all Astro modules. |
+| `pnpm prettier`     | Check code format with Prettier                   |
+| `pnpm prettier:fix` | Format codes with Prettier                        |
+| `pnpm lint`         | Lint with ESLint                                  |
+| `pnpm cz`           | Commit code changes with commitizen               |
 
 ## Upgrade
 
 ```sh
 pnpm dlx @astrojs/upgrade
-```
-
-## Check using prettier
-
-```sh
-pnpm prettier
-```
-
-## Fix using prettier
-
-```sh
-pnpm prettier:fix
-```
-
-## Check using eslint
-
-```sh
-pnpm lint
-```
-
-## Build
-
-```sh
-pnpm build
-```
-
-## Optimize using jampack
-
-```sh
-pnpm optimize
 ```
 
 ## Deploy
