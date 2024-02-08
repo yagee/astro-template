@@ -3,13 +3,13 @@
   "type": "module",
   "version": "4.2.0",
   "scripts": {
-    "prettier": "prettier --check --ignore-unknown '**/*'",
-    "prettier:fix": "prettier --write --ignore-unknown '**/*'",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "prettier": "prettier --check --ignore-unknown '**/*'",
+    "prettier:fix": "prettier --write --ignore-unknown '**/*'",
     "cz": "cz"
   },
   "dependencies": {
