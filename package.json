@@ -9,7 +9,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "cz": "cz"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
@@ -30,7 +31,14 @@
   },
   "devDependencies": {
     "astro-compress": "github:astro-community/AstroCompress#no-sharp",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.13.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
