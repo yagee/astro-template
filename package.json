@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "optimize": "jampack ./dist",
     "preview": "astro preview",
     "astro": "astro",
     "prettier": "prettier --check --ignore-unknown '**/*'",
@@ -27,10 +28,11 @@
     "postcss-media-minmax": "^5.0.0",
     "postcss-nested": "^6.0.1",
     "postcss-sort-media-queries": "^5.2.0",
-    "sharp": "^0.33.2",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@divriots/jampack": "^0.23.3",
+    "@img/sharp-linux-x64": "^0.33.2",
     "@typescript-eslint/parser": "^6.21.0",
     "astro-compress": "github:astro-community/AstroCompress#no-sharp",
     "astro-eslint-parser": "^0.16.3",

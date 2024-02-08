@@ -23,4 +23,7 @@ pnpm-debug.log*
 # Local Netlify folder
 .netlify
 
+# Jampack cache folder
+.jampack
+
 _sort.css
