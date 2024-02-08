@@ -1,7 +1,7 @@
 {
   "name": "astro-template",
   "type": "module",
-  "version": "4.2.0",
+  "version": "4.3.5",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
-    "astro": "^4.3.0",
+    "astro": "^4.3.5",
     "astro-relative-links": "^0.3.7",
     "astro-typograf": "^2.0.0",
     "autoprefixer": "^10.4.17",
@@ -40,7 +40,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
     "eslint-plugin-astro": "^0.31.4",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0"
   },
   "config": {
