@@ -30,10 +30,9 @@
 }
 
 .content-grid > .full-width {
-  grid-column: full-width;
-
   display: grid;
   grid-template-columns: inherit;
+  grid-column: full-width;
 }
 
 img.full-width {
@@ -71,9 +70,9 @@ img.full-width {
 
 body {
   margin: 0;
-  font-family: var(--font-family);
   font-size: var(--fs-400);
   line-height: 1.6;
+  font-family: var(--font-family);
   text-wrap: balance;
 }
 
@@ -97,34 +96,34 @@ figure {
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 img {
+  vertical-align: middle;
+  shape-margin: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
   font-style: italic;
-  background-repeat: no-repeat;
-  background-size: cover;
-  shape-margin: 1rem;
 }
 
 .visually-hidden {
   clip: rect(0 0 0 0);
+  position: absolute;
   clip-path: inset(50%);
+  width: 1px;
   height: 1px;
   overflow: hidden;
-  position: absolute;
   white-space: nowrap;
-  width: 1px;
 }
 
 .wrapper {
+  margin-inline: auto;
   width: calc(100% - 3rem);
   max-width: 900px;
-  margin-inline: auto;
 }
 
 .flow > * + * {

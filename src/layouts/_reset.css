@@ -16,8 +16,8 @@
 
 html {
   text-size-adjust: none;
-  color-scheme: var(--color-scheme, dark light);
   hanging-punctuation: first last;
+  color-scheme: var(--color-scheme, dark light);
 }
 
 body {
@@ -73,8 +73,8 @@ video {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
   color: currentColor;
+  text-decoration-skip-ink: auto;
 }
 
 p,
