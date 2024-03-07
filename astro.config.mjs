@@ -18,7 +18,9 @@ export default defineConfig({
     // inlineStylesheets: 'never',
   },
   integrations: [
-    typograf('p, h1, h2, h3, div, span'),
+    typograf({
+      selector: 'p, h1, h2, h3, div, span',
+    }),
     relativeLinks(),
     compress({
       HTML: {
