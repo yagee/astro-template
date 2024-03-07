@@ -19,7 +19,7 @@ export default defineConfig({
   },
   integrations: [
     typograf({
-      selector: 'p, h1, h2, h3, div, span',
+      selector: 'p, a, h1, h2, h3, div, span',
     }),
     relativeLinks(),
     compress({
