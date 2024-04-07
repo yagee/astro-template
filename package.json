@@ -1,7 +1,7 @@
 {
   "name": "astro-template",
   "type": "module",
-  "version": "4.5.9",
+  "version": "4.5.16",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -16,33 +16,33 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
-    "astro": "^4.5.9",
-    "astro-relative-links": "^0.3.7",
+    "astro": "^4.5.16",
+    "astro-relative-links": "^0.3.9",
     "astro-typograf": "^2.0.0",
     "autoprefixer": "^10.4.19",
-    "cssnano": "^6.1.1",
-    "cssnano-preset-advanced": "^6.1.1",
+    "cssnano": "^6.1.2",
+    "cssnano-preset-advanced": "^6.1.2",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-combine-media-query": "^1.0.1",
     "postcss-import": "^16.1.0",
     "postcss-media-minmax": "^5.0.0",
     "postcss-nested": "^6.0.1",
     "postcss-sort-media-queries": "^5.2.0",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4"
   },
   "devDependencies": {
-    "@divriots/jampack": "^0.23.3",
+    "@divriots/jampack": "^0.23.4",
     "@img/sharp-linux-x64": "^0.33.3",
-    "@typescript-eslint/parser": "^7.3.1",
+    "@typescript-eslint/parser": "^7.5.0",
     "astro-compress": "github:astro-community/AstroCompress#no-sharp",
-    "astro-eslint-parser": "^0.16.3",
+    "astro-eslint-parser": "^0.17.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^0.33.1",
+    "eslint": "^9.0.0",
+    "eslint-plugin-astro": "^0.34.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
-    "prettier-plugin-css-order": "^2.0.1"
+    "prettier-plugin-css-order": "^2.1.2"
   },
   "config": {
     "commitizen": {
