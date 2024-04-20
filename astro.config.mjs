@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
-import compress from 'astro-compress';
+import compress from '@playform/compress';
 import relativeLinks from 'astro-relative-links';
 import typograf from 'astro-typograf';
 
@@ -23,6 +23,11 @@ export default defineConfig({
     }),
     relativeLinks(),
     compress({
+      CSS: {
+        csso: {
+          forceMediaMerge: true, // don't work because styles are inlined
+        },
+      },
       HTML: {
         'html-minifier-terser': {
           collapseBooleanAttributes: true,
@@ -36,11 +41,7 @@ export default defineConfig({
           },
         },
       },
-      CSS: {
-        csso: {
-          forceMediaMerge: true, // don't work because styles are inlined
-        },
-      },
+      // Image: false,
       JavaScript: terserOptions,
       SVG: {
         svgo: {
