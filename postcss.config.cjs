@@ -16,6 +16,7 @@ module.exports = {
         {
           autoprefixer: false,
           reduceIdents: false,
+          discardUnused: false,
         },
       ],
     }),
