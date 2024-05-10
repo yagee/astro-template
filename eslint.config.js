@@ -11,7 +11,7 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.node,
-        ...globals.es2022,
+        ...globals.es2020, // or es2022 ??
       },
     },
     rules: {},
