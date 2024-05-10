@@ -13,6 +13,14 @@ https://docs.astro.build/en/guides/integrations-guide/alpinejs/
   <div x-show="open">Content...</div>
 </div>
 
+<div x-data="{ date: '' }">
+  <input
+    x-mask="99/99/9999"
+    placeholder="MM/DD/YYYY"
+    x-model="date"
+  />
+</div>
+
 <script>
   // import mask from '@alpinejs/mask';
 
