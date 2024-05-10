@@ -1,4 +1,6 @@
 ---
+import { Picture } from 'astro:assets';
+
 interface Props {
   title: string;
   body: string;
@@ -16,8 +18,11 @@ import pic from './pic.png';
   <p>
     {body}
   </p>
-  <img
-    src={pic.src}
+  <Picture
+    src={pic}
+    formats={['avif', 'webp']}
+    width={pic.width}
+    densities={[1, 2, 3]}
     alt=""
   />
 </div>
