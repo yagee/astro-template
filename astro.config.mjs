@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 
+// import alpine from '@astrojs/alpinejs';
 import compress from '@playform/compress';
 import relativeLinks from 'astro-relative-links';
 import typograf from 'astro-typograf';
@@ -18,6 +19,7 @@ export default defineConfig({
     // inlineStylesheets: 'never',
   },
   integrations: [
+    // alpine({ entrypoint: '/src/entrypoint' }),
     typograf({
       selector: 'p, a, h1, h2, h3, div, span',
     }),

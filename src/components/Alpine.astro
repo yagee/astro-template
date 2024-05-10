@@ -1,0 +1,44 @@
+<h1>Рекомендуемый способ подключения плагинов - подцепить их в head</h1>
+
+https://docs.astro.build/en/guides/integrations-guide/alpinejs/
+
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script> -->
+
+Всё остальное советуется через entrypoint? Но спорно, мне лично нравится вариант
+через локальный скрипт таки
+
+<div x-data="dropdown">
+  <button @click="toggle">Toggle Content</button>
+
+  <div x-show="open">Content...</div>
+</div>
+
+<script>
+  // import mask from '@alpinejs/mask';
+
+  document.addEventListener('alpine:init', () => {
+    // window.Alpine.plugin(mask);
+
+    window.Alpine.data('dropdown', () => ({
+      open: true,
+      toggle() {
+        this.open = !this.open;
+      },
+    }));
+  });
+</script>
+
+<script>
+  // import mask from '@alpinejs/mask';
+  import Alpine from 'alpinejs';
+
+  document.addEventListener('alpine:init', () => {
+    // Alpine.plugin(mask);
+    Alpine.data('dropdown', () => ({
+      open: true,
+      toggle() {
+        this.open = !this.open;
+      },
+    }));
+  });
+</script>

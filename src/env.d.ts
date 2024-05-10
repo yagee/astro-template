@@ -10,3 +10,7 @@ declare module '*.mp4' {
   const src: string;
   export default src;
 }
+
+interface Window {
+  Alpine: import('alpinejs').Alpine;
+}
