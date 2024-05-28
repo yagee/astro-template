@@ -5,10 +5,7 @@ module.exports = {
     require('autoprefixer'),
     require('postcss-media-minmax'),
     require('postcss-sort-media-queries'),
-    require('postcss-combine-duplicated-selectors')({
-      removeDuplicatedProperties: true,
-      removeDuplicatedValues: false,
-    }),
+    require('postcss-combine-duplicated-selectors')(),
     // require('postcss-combine-media-query'),
     require('cssnano')({
       preset: [
