@@ -15,7 +15,9 @@ const terserOptions = {
 
 // https://astro.build/config
 export default defineConfig({
-  devToolbar: false,
+  devToolbar: {
+    enabled: false,
+  },
   build: {
     // inlineStylesheets: 'never',
   },
