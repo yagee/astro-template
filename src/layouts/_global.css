@@ -1,0 +1,44 @@
+@import '_utopia.css';
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/Gilroy-Light.otf');
+  font-family: Gilroy;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/Gilroy-ExtraBold.otf');
+  font-family: Gilroy;
+}
+
+:root {
+  --accent: 136, 58, 234;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%
+  );
+}
+
+body {
+  margin: 0;
+  font-family:
+    Gilroy,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
