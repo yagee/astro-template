@@ -1,6 +1,6 @@
 @import '_utopia.css';
 
-@font-face {
+/* @font-face {
   font-style: normal;
   font-weight: 300;
   src: url('/fonts/Gilroy-Light.otf');
@@ -12,7 +12,7 @@
   font-weight: 800;
   src: url('/fonts/Gilroy-ExtraBold.otf');
   font-family: Gilroy;
-}
+} */
 
 :root {
   --accent: 136, 58, 234;
@@ -41,4 +41,8 @@ body {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
+}
+
+body {
+  margin: 0;
 }
