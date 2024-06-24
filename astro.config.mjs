@@ -46,7 +46,7 @@ export default defineConfig({
           },
         },
       },
-      // Image: false,
+      Image: import.meta.env.PROD, // shows true or false
       JavaScript: terserOptions,
       SVG: {
         svgo: {
