@@ -1,0 +1,11 @@
+/* TEAM */
+  Front-end: Roman Ryzhikov
+  Email: mail@yagee.ru
+  Twitter: napilsya
+  Location: Kaliningrad, Russia
+
+/* SITE */
+  Last update: 2024/06/06
+  Standards: HTML5, CSS3, ES2020
+  Components: Astro, Alpine.js, Utopia, Postcss
+  Software: Windows, WSL, Ubuntu, Figma, VS Code
