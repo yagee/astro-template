@@ -2,14 +2,15 @@
 import './_reset.css';
 import './_global.css';
 
-import Head from '@components/Head/Head.astro';
+import Favicon from '@components/Meta/Favicon.astro';
+import Meta from '@components/Meta/Meta.astro';
 
 interface Props {
   title?: string;
   description?: string;
 }
 
-const { title = 'Title', description = 'Description' } = Astro.props;
+const { title: title = 'Title', description = 'Description' } = Astro.props;
 ---
 
 <!doctype html>
@@ -28,7 +29,16 @@ const { title = 'Title', description = 'Description' } = Astro.props;
       name="viewport"
       content="width=device-width"
     />
-    <Head meta={{ title, description }} />
+    <Favicon />
+    <Meta
+      meta={{ title, description }}
+      short
+    />
+    <link
+      type="text/plain"
+      rel="author"
+      href="humans.txt"
+    />
   </head>
   <body>
     <slot />
