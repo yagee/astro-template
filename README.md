@@ -13,7 +13,6 @@
 | `pnpm prettier`     | Check code format with Prettier                   |
 | `pnpm prettier:fix` | Format codes with Prettier                        |
 | `pnpm lint`         | Lint with ESLint                                  |
-| `pnpm cz`           | Commit code changes with commitizen               |
 
 ## Upgrade
 
