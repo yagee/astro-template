@@ -1,10 +1,10 @@
 import { defineConfig } from 'astro/config';
 
 // import alpine from '@astrojs/alpinejs';
+import sitemap from '@astrojs/sitemap';
 import compress from '@playform/compress';
 import relativeLinks from 'astro-relative-links';
 import typograf from 'astro-typograf';
-
 const terserOptions = {
   compress: false,
   mangle: false,
@@ -47,7 +47,8 @@ export default defineConfig({
           },
         },
       },
-      Image: import.meta.env.PROD, // shows true or false
+      Image: import.meta.env.PROD,
+      // shows true or false
       JavaScript: terserOptions,
       SVG: {
         svgo: {
@@ -59,5 +60,6 @@ export default defineConfig({
         },
       },
     }),
+    sitemap(),
   ],
 });

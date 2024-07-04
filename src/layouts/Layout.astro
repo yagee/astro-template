@@ -1,9 +1,9 @@
 ---
+import Helmet from 'astro-helmet';
+import { generateHeadItems } from './_headConfig';
+
 import './_reset.css';
 import './_global.css';
-
-import Favicon from '@components/Meta/Favicon.astro';
-import Meta from '@components/Meta/Meta.astro';
 
 interface Props {
   title?: string;
@@ -11,31 +11,14 @@ interface Props {
 }
 
 const { title: title = 'Title', description = 'Description' } = Astro.props;
+
+const isProd = import.meta.env.PROD;
+const headItems = generateHeadItems({ title, description, isProd });
 ---
 
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="robots"
-      content="noindex"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width"
-    />
-    <Favicon />
-    <Meta
-      meta={{ title, description }}
-      short
-    />
-    <link
-      type="text/plain"
-      rel="author"
-      href="humans.txt"
-    />
-  </head>
+  <Helmet {headItems} />
   <body>
     <slot />
   </body>
