@@ -1,6 +1,5 @@
 ---
 import Helmet from 'astro-helmet';
-import { generateHeadItems } from './_headConfig';
 
 import './_reset.css';
 import './_global.css';
@@ -12,8 +11,40 @@ interface Props {
 
 const { title: title = 'Title', description = 'Description' } = Astro.props;
 
-const isProd = import.meta.env.PROD;
-const headItems = generateHeadItems({ title, description, isProd });
+const headItems = {
+  title: title,
+  base: [{ href: Astro.url }],
+  meta: [
+    { name: 'theme-color', content: '#000000' },
+    { name: 'description', content: description },
+    { name: 'robots', content: 'noindex' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: Astro.url },
+    { property: 'og:title', content: title },
+    { property: 'og:description', content: description },
+    {
+      property: 'og:image',
+      content: `${Astro.url}social.png`,
+    },
+    { property: 'twitter:card', content: 'summary_large_image' },
+    { property: 'twitter:url', content: Astro.url },
+    { property: 'twitter:title', content: title },
+    { property: 'twitter:description', content: description },
+    {
+      property: 'twitter:image',
+      content: `${Astro.url}social.png`,
+    },
+  ],
+  link: [
+    { rel: 'canonical', href: new URL(Astro.url.pathname, Astro.site) },
+    { rel: 'icon', sizes: '32x32', href: '/favicon.ico' },
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+    { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+    { rel: 'manifest', href: '/manifest.webmanifest' },
+    { rel: 'sitemap', href: '/sitemap-index.xml' },
+    { rel: 'author', type: 'text/plain', href: '/humans.txt' },
+  ],
+};
 ---
 
 <!doctype html>
