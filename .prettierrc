@@ -1,7 +1,4 @@
 {
-  "singleQuote": true,
-  "singleAttributePerLine": true,
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-css-order"],
   "overrides": [
     {
       "files": "*.astro",
@@ -9,5 +6,12 @@
         "parser": "astro"
       }
     }
-  ]
+  ],
+  "plugins": [
+    "prettier-plugin-astro",
+    "prettier-plugin-css-order",
+    "prettier-plugin-toml"
+  ],
+  "singleAttributePerLine": true,
+  "singleQuote": true
 }
