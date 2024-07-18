@@ -16,5 +16,6 @@
     "**/package-lock.json": true,
     "**/yarn.lock": true,
     "**/pnpm-lock.yaml": true
-  }
+  },
+  "workbench.colorTheme": "Houston"
 }
