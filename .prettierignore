@@ -1,4 +1,4 @@
 dist
-public
 pnpm-lock.yaml
 .netlify
+# public
