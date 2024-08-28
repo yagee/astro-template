@@ -7,11 +7,7 @@
       }
     }
   ],
-  "plugins": [
-    "prettier-plugin-astro",
-    "prettier-plugin-css-order",
-    "prettier-plugin-toml"
-  ],
+  "plugins": ["prettier-plugin-astro", "prettier-plugin-css-order"],
   "singleAttributePerLine": true,
   "singleQuote": true
 }
