@@ -15,7 +15,16 @@ const headItems = {
   title: title,
   base: [{ href: Astro.url }],
   meta: [
-    { name: 'theme-color', content: '#000000' },
+    {
+      name: 'theme-color',
+      media: '(prefers-color: scheme: light)',
+      content: '#FFFFFF',
+    },
+    {
+      name: 'theme-color',
+      media: '(prefers-color: scheme: dark)',
+      content: '#000000',
+    },
     { name: 'description', content: description },
     { name: 'robots', content: 'noindex' },
     { property: 'og:type', content: 'website' },
