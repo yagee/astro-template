@@ -19,13 +19,4 @@ export default [
   {
     ignores: ['.vscode/*', 'node_modules/*', 'public/*', 'dist/*'],
   },
-  {
-    extends: 'eslint:recommended',
-    overrides: [
-      {
-        files: ['*.astro'],
-        parser: 'astro-eslint-parser',
-      },
-    ],
-  },
 ];
