@@ -4,7 +4,8 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import compress from '@playform/compress';
 import relativeLinks from 'astro-relative-links';
-import typograf from 'astro-typograf';
+// import typograf from 'astro-typograf';
+
 const terserOptions = {
   compress: false,
   mangle: false,
@@ -24,9 +25,9 @@ export default defineConfig({
   },
   integrations: [
     // alpine({ entrypoint: '/src/entrypoint' }),
-    typograf({
-      selector: 'p, a, h1, h2, h3, div, span',
-    }),
+    // typograf({
+    //   selector: 'p, a, h1, h2, h3, div, span',
+    // }),
     relativeLinks(),
     compress({
       CSS: {
@@ -49,17 +50,18 @@ export default defineConfig({
       },
       Image: import.meta.env.PROD,
       // shows true or false
-      JavaScript: terserOptions,
+      JavaScript: { terser: terserOptions },
       SVG: {
         svgo: {
-          plugins: [
-            {
-              inlineStyles: false,
-            },
-          ],
+          // plugins: [
+          //   {
+          //     inlineStyles: false,
+          //   },
+          // ],
         },
       },
     }),
     sitemap(),
+    // removeOriginalImages(),
   ],
 });

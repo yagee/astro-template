@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import './_reset.css';
 import './_base.css';
 
@@ -39,7 +39,7 @@ const { title } = Astro.props;
       content={Astro.generator}
     /> -->
     <title>{title}</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <slot />
