@@ -16,7 +16,7 @@ const terserOptions = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'http://localhost:4321',
   devToolbar: {
     enabled: false,
   },
