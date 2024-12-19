@@ -7,12 +7,26 @@ https://docs.astro.build/en/guides/integrations-guide/alpinejs/
 Всё остальное советуется через entrypoint? Но спорно, мне лично нравится вариант
 через локальный скрипт таки
 
-<div x-data="dropdown">
-  <button @click="toggle">Toggle Content</button>
-
+<h2>Example</h2>
+<div x-data="{ open: false }">
+  <button @click="open = ! open">Toggle Content</button>
   <div x-show="open">Content...</div>
 </div>
 
+<h2>Example with method</h2>
+<div x-data="{ open: false, toggle() { this.open = ! this.open } }">
+  <button @click="toggle()">Toggle Content</button>
+  <div x-show="open">Content...</div>
+</div>
+
+<h2>Example with re-usable Data</h2>
+<!-- code for this placed in entrypoint -->
+<div x-data="dropdown">
+  <button @click="toggle">Toggle Content</button>
+  <div x-show="open">Content...</div>
+</div>
+
+<h2>Plugin example</h2>
 <div x-data="{ date: '' }">
   <input
     x-mask="99/99/9999"
@@ -20,33 +34,3 @@ https://docs.astro.build/en/guides/integrations-guide/alpinejs/
     x-model="date"
   />
 </div>
-
-<script>
-  // import mask from '@alpinejs/mask';
-
-  document.addEventListener('alpine:init', () => {
-    // window.Alpine.plugin(mask);
-
-    window.Alpine.data('dropdown', () => ({
-      open: true,
-      toggle() {
-        this.open = !this.open;
-      },
-    }));
-  });
-</script>
-
-<script>
-  // import mask from '@alpinejs/mask';
-  import Alpine from 'alpinejs';
-
-  document.addEventListener('alpine:init', () => {
-    // Alpine.plugin(mask);
-    Alpine.data('dropdown', () => ({
-      open: true,
-      toggle() {
-        this.open = !this.open;
-      },
-    }));
-  });
-</script>
