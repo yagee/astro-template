@@ -64,4 +64,8 @@ export default defineConfig({
     sitemap(),
     // removeOriginalImages(),
   ],
+  experimental: {
+    //   contentLayer: true,
+    svg: true,
+  },
 });
