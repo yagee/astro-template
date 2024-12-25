@@ -9,6 +9,8 @@ interface Props {
   description?: string;
 }
 
+import { openGraph } from '../utils/openGraph';
+
 const { title: title = 'Title', description = 'Description' } = Astro.props;
 
 const headItems = {
@@ -34,7 +36,7 @@ const headItems = {
     {
       property: 'og:image',
       // content: `${Astro.url}social.png`,
-      content: `/social.png`,
+      content: openGraph(title),
     },
     { property: 'twitter:card', content: 'summary_large_image' },
     { property: 'twitter:url', content: Astro.url },
@@ -43,7 +45,7 @@ const headItems = {
     {
       property: 'twitter:image',
       // content: `${Astro.url}social.png`,
-      content: `/social.png`,
+      content: openGraph(title),
     },
   ],
   link: [
