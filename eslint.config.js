@@ -11,12 +11,12 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.node,
-        ...globals.es2020, // TODO: decide which version is ok? es2020 or es2022
+        ...globals.es2021,
       },
     },
     rules: {},
   },
   {
-    ignores: ['.vscode/*', 'node_modules/*', 'public/*', 'dist/*'],
+    ignores: ['.astro/*', '.vscode/*', 'dist/*', 'node_modules/*', 'public/*'],
   },
 ];
