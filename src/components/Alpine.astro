@@ -1,11 +1,14 @@
-<h1>Рекомендуемый способ подключения плагинов - подцепить их в head</h1>
+<p>
+  <a href="https://docs.astro.build/en/guides/integrations-guide/alpinejs/"
+    >Рекомендуемый</a
+  > способ подключения плагинов - подцепить их в head
+</p>
 
-https://docs.astro.build/en/guides/integrations-guide/alpinejs/
-
-<!-- <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script> -->
-
-Всё остальное советуется через entrypoint? Но спорно, мне лично нравится вариант
-через локальный скрипт таки
+<code>
+  &lt;script defer
+  src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+  &gt;&lt;/script&gt;
+</code>
 
 <h2>Example</h2>
 <div x-data="{ open: false }">
@@ -34,3 +37,9 @@ https://docs.astro.build/en/guides/integrations-guide/alpinejs/
     x-model="date"
   />
 </div>
+
+<style>
+  h2 {
+    font-size: var(--step-4);
+  }
+</style>
