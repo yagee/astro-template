@@ -18,13 +18,22 @@ import pic from './pic.png';
   <p>
     {body}
   </p>
-  <Picture
-    src={pic}
-    formats={['avif', 'webp']}
-    width={pic.width}
-    densities={[1, 2, 3]}
-    alt=""
-  />
+  <div class="pics">
+    <Picture
+      src={pic}
+      alt="A description of my image."
+      densities={[1, 2, 3]}
+      width={300}
+      formats={['avif', 'webp']}
+    />
+    <Picture
+      src={pic}
+      alt="A description of my image."
+      layout="responsive"
+      width={300}
+      formats={['avif', 'webp']}
+    />
+  </div>
 </div>
 
 <style>
@@ -47,5 +56,10 @@ import pic from './pic.png';
 
   .card {
     color: green;
+  }
+
+  .pics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 </style>

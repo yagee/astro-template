@@ -64,8 +64,13 @@ export default defineConfig({
     sitemap(),
     // removeOriginalImages(),
   ],
+  // Docs for responsiveImages https://docs.astro.build/en/reference/experimental-flags/responsive-images/
+  // image: {
+  //   experimentalLayout: 'responsive',
+  // },
   experimental: {
     //   contentLayer: true,
+    responsiveImages: true,
     svg: true,
   },
 });
