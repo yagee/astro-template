@@ -80,7 +80,7 @@ a:not([class]) {
 
 p,
 li {
-  /* max-width: var(--p-max-width, 65ch); */
+  max-width: var(--p-max-width, 65ch);
   text-wrap: pretty;
 }
 
