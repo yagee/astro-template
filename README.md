@@ -1,5 +1,7 @@
 # Astro Template
 
+![wakatime](https://wakatime.com/badge/user/49414914-9ef6-458a-b15c-feb527a44bbd/project/c1c4391f-b706-4972-a1be-87113ebf8625.svg?style=flat-square 'Wakatime')
+
 This is an Astro template project that provides a starting point for building websites using the Astro framework. The template includes various configurations and tools to help developers get started quickly.
 
 ## Main Function Points
