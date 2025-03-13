@@ -72,5 +72,6 @@ export default defineConfig({
     //   contentLayer: true,
     responsiveImages: true,
     svg: true,
+    preserveScriptOrder: true,
   },
 });
