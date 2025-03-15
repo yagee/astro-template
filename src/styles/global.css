@@ -1,4 +1,6 @@
-@import '_utopia.css';
+@import 'reset.css';
+@import 'fonts.css';
+@import 'utopia.css';
 
 /* @font-face {
   font-style: normal;
@@ -45,6 +47,7 @@ body {
     sans-serif;
 }
 
-body {
-  margin: 0;
+/* https://frontendmasters.com/blog/chilled-out-text-underlines/ */
+a:not(:is(:hover, :focus)) {
+  text-decoration-color: color-mix(in srgb, currentColor, transparent 75%);
 }
