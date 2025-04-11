@@ -57,3 +57,9 @@ a:focus-visible {
   outline-width: 0.25em;
   outline-offset: 0.25em;
 }
+
+/* do not affect level of specificity */
+:where(a:not([class])) {
+  color: currentColor;
+  text-decoration-skip-ink: auto;
+}
