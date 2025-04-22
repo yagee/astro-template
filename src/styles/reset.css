@@ -73,7 +73,8 @@ video {
   height: auto;
 }
 
-a:not([class]) {
+/* do not affect level of specificity */
+:where(a:not([class])) {
   color: currentColor;
   text-decoration-skip-ink: auto;
 }
