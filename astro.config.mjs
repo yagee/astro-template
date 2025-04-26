@@ -69,7 +69,6 @@ export default defineConfig({
   experimental: {
     //   contentLayer: true,
     responsiveImages: true,
-    svg: true,
     preserveScriptOrder: true,
   },
 });
