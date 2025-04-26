@@ -30,7 +30,7 @@ const href = Astro.url.href;
 <Favicon />
 
 <link
-  href="./sitemap-index.xml"
+  href="/sitemap-index.xml"
   rel="sitemap"
 />
 
@@ -70,6 +70,14 @@ const href = Astro.url.href;
 <meta
   content={`${href}social.png`}
   property="og:image"
+/>
+<meta
+  content="og:site_name"
+  property="Astro шаблон от @yagee"
+/>
+<meta
+  property="og:locale"
+  content="ru_RU"
 />
 
 {/* Twitter */}
