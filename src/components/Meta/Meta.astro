@@ -1,0 +1,101 @@
+---
+import Favicon from './Favicon.astro';
+
+interface Props {
+  meta: {
+    title: string;
+    description: string;
+  };
+}
+
+const { meta } = Astro.props;
+
+const href = Astro.url.href;
+---
+
+<meta charset="UTF-8" />
+<meta
+  content="width=device-width,initial-scale=1"
+  name="viewport"
+/>
+<base href={href} />
+
+<title>{meta.title}</title>
+
+<link
+  href={href}
+  rel="canonical"
+/>
+
+<Favicon />
+
+<link
+  href="./sitemap-index.xml"
+  rel="sitemap"
+/>
+
+<meta
+  content="#FFFFFF"
+  name="theme-color"
+  media="(prefers-color: scheme: light)"
+/>
+<meta
+  content="#000000"
+  name="theme-color"
+  media="(prefers-color: scheme: dark)"
+/>
+
+<meta
+  content={meta.description}
+  name="description"
+/>
+
+{/* Open Graph / Facebook */}
+<meta
+  content="website"
+  property="og:type"
+/>
+<meta
+  content={href}
+  property="og:url"
+/>
+<meta
+  content={meta.title}
+  property="og:title"
+/>
+<meta
+  content={meta.description}
+  property="og:description"
+/>
+<meta
+  content={`${href}social.png`}
+  property="og:image"
+/>
+
+{/* Twitter */}
+<meta
+  content="summary_large_image"
+  property="twitter:card"
+/>
+<meta
+  content={href}
+  property="twitter:url"
+/>
+<meta
+  content={meta.title}
+  property="twitter:title"
+/>
+<meta
+  content={meta.description}
+  property="twitter:description"
+/>
+<meta
+  content={`${href}social.png`}
+  property="twitter:image"
+/>
+
+<link
+  rel="author"
+  type="text/plain"
+  href="/humans.txt"
+/>
