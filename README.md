@@ -7,8 +7,8 @@ This is an Astro template project that provides a starting point for building we
 ## Main Function Points
 
 - Provides a pre-configured Astro project with common settings and dependencies
-- Includes integration with Helmet for managing meta tags and SEO
-- Adds a sitemap and robots.txt file for better search engine optimization
+- Uses `astro-capo` for managing meta tags and SEO
+- Adds a sitemap for better search engine optimization
 - Optimizes the build process using Jampack for improved performance
 - Includes Prettier and ESLint for code formatting and linting
 - Supports deployment to Netlify with a pre-configured Netlify configuration file
@@ -16,7 +16,7 @@ This is an Astro template project that provides a starting point for building we
 ## Technology Stack
 
 - Astro: A static site generator for building fast and content-focused websites
-- Helmet: A library for managing HTML head tags, including meta tags and SEO
+- astro-capo: A library for managing HTML head tags, including meta tags and SEO
 - Jampack: A tool for optimizing Astro builds for better performance
 - Prettier: A code formatter for maintaining consistent code style
 - ESLint: A linter for identifying and fixing problems in JavaScript code
