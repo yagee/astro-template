@@ -1,11 +1,14 @@
+[prerender]
+enabled = false
+
 [[headers]]
-for = "/*"
+for = "/robots.txt"
 [headers.values]
-X-Robots-Tag = "noindex"
-X-Content-Type-Options = "nosniff"
-Content-Security-Policy = """
-frame-ancestors 'self';
-style-src-elem 'self' 'unsafe-inline';
-"""
-Cross-Origin-Resource-Policy = "same-origin"
-Referrer-Policy = "strict-origin-when-cross-origin"
+  Cache-Control = "no-store"
+  Content-Type = "text/plain"
+
+[[headers]]
+for = "/sitemap*.xml"
+[headers.values]
+  Cache-Control = "no-store"
+  Content-Type = "application/xml"
