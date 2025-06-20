@@ -22,6 +22,9 @@ export default defineConfig({
   build: {
     // inlineStylesheets: 'never',
   },
+  image: {
+    responsiveStyles: true,
+  },
   integrations: [
     // typograf({
     //   selector: 'p, a, h1, h2, h3, div, span',
@@ -62,13 +65,7 @@ export default defineConfig({
     sitemap(),
     // removeOriginalImages(),
   ],
-  // Docs for responsiveImages https://docs.astro.build/en/reference/experimental-flags/responsive-images/
-  // image: {
-  //   experimentalLayout: 'responsive',
-  // },
   experimental: {
-    //   contentLayer: true,
-    responsiveImages: true,
     preserveScriptOrder: true,
   },
 });
