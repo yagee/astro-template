@@ -9,6 +9,7 @@
     "optimize": "jampack ./dist",
     "preview": "astro preview",
     "astro": "astro",
+    "sync": "astro sync",
     "prettier": "prettier --check --ignore-unknown '**/*'",
     "prettier:fix": "prettier --write --ignore-unknown '**/*'",
     "lint": "eslint ."
