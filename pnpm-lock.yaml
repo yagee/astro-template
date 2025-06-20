@@ -63,6 +63,9 @@ importers:
       '@divriots/jampack':
         specifier: ^0.33.1
         version: 0.33.1(@swc/helpers@0.5.17)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
+      '@eslint/js':
+        specifier: ^9.29.0
+        version: 9.29.0
       '@img/sharp-linux-x64':
         specifier: ^0.34.2
         version: 0.34.2
