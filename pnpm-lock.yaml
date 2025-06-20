@@ -66,9 +66,6 @@ importers:
       '@eslint/js':
         specifier: ^9.29.0
         version: 9.29.0
-      '@img/sharp-linux-x64':
-        specifier: ^0.34.2
-        version: 0.34.2
       '@playform/compress':
         specifier: ^0.2.0
         version: 0.2.0(@types/node@22.13.14)(jiti@2.4.2)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.5.0)
@@ -706,6 +703,7 @@ packages:
   '@img/sharp-linux-x64@0.34.2':
     resolution: {integrity: sha512-sD7J+h5nFLMMmOXYH4DD9UtSNBD05tWSSdWAcEyzqW8Cn5UxXvsHAxmxSesYUsTOBmUnjtxghKDl15EvfqLFbQ==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [x64]
     os: [linux]
 
   '@img/sharp-linuxmusl-arm64@0.33.5':
@@ -4230,6 +4228,7 @@ snapshots:
   '@img/sharp-linux-x64@0.34.2':
     optionalDependencies:
       '@img/sharp-libvips-linux-x64': 1.1.0
+    optional: true
 
   '@img/sharp-linuxmusl-arm64@0.33.5':
     optionalDependencies:
