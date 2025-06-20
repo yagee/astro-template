@@ -2,8 +2,6 @@ import type { APIRoute } from 'astro';
 
 const now = new Date();
 
-console.log(now);
-
 const robotsTxt = `
 /* TEAM */
   Front-end: Roman Ryzhikov
