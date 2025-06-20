@@ -85,11 +85,26 @@ li {
   text-wrap: pretty;
 }
 
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
 input,
 button,
 textarea,
 select {
   font: inherit;
+}
+
+button,
+[role='button'] {
+  cursor: pointer;
 }
 
 textarea:not([rows]) {
@@ -100,5 +115,14 @@ textarea:not([rows]) {
   :has(:target) {
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }
