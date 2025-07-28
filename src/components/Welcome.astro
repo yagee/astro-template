@@ -1,5 +1,5 @@
 ---
-import { Picture } from 'astro:assets';
+import { Image, Picture } from 'astro:assets';
 
 interface Props {
   title: string;
@@ -19,19 +19,35 @@ import pic from './pic.png';
     {body}
   </p>
   <div class="pics">
-    <Picture
+    <Image
       src={pic}
       alt="A description of my image."
-      densities={[1, 2, 3]}
-      width={300}
-      formats={['avif', 'webp']}
+      fit="cover"
+      position="top"
+      width={200}
+      height={200}
+      priority
     />
     <Picture
       src={pic}
       alt="A description of my image."
-      layout="constrained"
-      width={300}
+      fit="cover"
+      position="top"
+      width={200}
+      height={200}
       formats={['avif', 'webp']}
+      priority
+    />
+    <Picture
+      src={pic}
+      alt="A description of my image."
+      width={200}
+      height={200}
+      formats={['avif', 'webp']}
+      densities={[1, 2, 3]}
+      loading={'eager'}
+      decoding={'sync'}
+      fetchpriority={'high'}
     />
   </div>
 </div>
@@ -43,6 +59,6 @@ import pic from './pic.png';
 
   .pics {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 </style>
