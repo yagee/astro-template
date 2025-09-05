@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import compress from '@playform/compress';
 import relativeLinks from 'astro-relative-links';
-// import typograf from 'astro-typograf';
+import typograf from 'astro-typograf';
 
 const terserOptions = {
   compress: false,
@@ -26,9 +26,16 @@ export default defineConfig({
     responsiveStyles: true,
   },
   integrations: [
-    // typograf({
-    //   selector: 'p, a, h1, h2, h3, div, span',
-    // }),
+    typograf({
+      selector: 'p, a, h1, h2, h3, div, span',
+      typografOptions: {
+        locale: ['ru', 'en-US'],
+        htmlEntity: { type: 'name' },
+      },
+      typografSettings: {
+        'common/nbsp/afterShortWord': { lengthShortWord: 3 },
+      },
+    }),
     relativeLinks(),
     compress({
       CSS: {
