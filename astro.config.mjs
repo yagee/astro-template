@@ -74,5 +74,14 @@ export default defineConfig({
   ],
   experimental: {
     preserveScriptOrder: true,
+    svgo: {
+      plugins: [
+        'preset-default',
+        {
+          name: 'removeViewBox',
+          active: false,
+        },
+      ],
+    },
   },
 });
