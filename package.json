@@ -1,7 +1,7 @@
 {
   "name": "astro-template",
   "type": "module",
-  "version": "5.16.0",
+  "version": "5.16.4",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -15,9 +15,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.5",
+    "@astrojs/check": "^0.9.6",
     "@astrojs/sitemap": "^3.6.0",
-    "astro": "^5.16.0",
+    "astro": "^5.16.4",
     "astro-capo": "^0.0.1",
     "astro-relative-links": "^0.4.2",
     "astro-typograf": "^3.2.1",
@@ -37,10 +37,10 @@
     "@divriots/jampack": "^0.34.0",
     "@eslint/js": "^9.39.1",
     "@playform/compress": "^0.2.0",
-    "@typescript-eslint/parser": "^8.47.0",
+    "@typescript-eslint/parser": "^8.48.1",
     "eslint": "^9.39.1",
     "eslint-plugin-astro": "^1.5.0",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-css-order": "^2.1.2"
   }
