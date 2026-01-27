@@ -1,8 +1,5 @@
-# build output
-dist/
-
-# generated types
-.astro/
+# environment variables
+.env
 
 # dependencies
 node_modules/
@@ -13,17 +10,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# environment variables
-.env
-.env.production
+# generated types
+.astro/
+
+# build output
+dist/
 
 # macOS-specific files
 .DS_Store
-
-# Local Netlify folder
-.netlify
-
-# Jampack cache folder
-.jampack
-
-_sort.css

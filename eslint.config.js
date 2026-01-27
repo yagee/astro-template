@@ -1,13 +1,13 @@
-import js from '@eslint/js';
-import eslintPluginAstro from 'eslint-plugin-astro';
-import globals from 'globals';
+import js from "@eslint/js";
+import eslintPluginAstro from "eslint-plugin-astro";
+import globals from "globals";
 
 export default [
   js.configs.recommended,
   ...eslintPluginAstro.configs.recommended,
   {
     languageOptions: {
-      ecmaVersion: 'latest',
+      ecmaVersion: "latest",
       globals: {
         ...globals.browser,
         ...globals.node,
@@ -17,6 +17,6 @@ export default [
     rules: {},
   },
   {
-    ignores: ['.astro/*', '.vscode/*', 'dist/*', 'node_modules/*', 'public/*'],
+    ignores: [".astro/*", ".vscode/*", "dist/*", "node_modules/*", "public/*"],
   },
 ];

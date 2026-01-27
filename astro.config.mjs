@@ -1,9 +1,8 @@
-import { defineConfig } from 'astro/config';
-
-import sitemap from '@astrojs/sitemap';
-import compress from '@playform/compress';
-import relativeLinks from 'astro-relative-links';
-import typograf from 'astro-typograf';
+import sitemap from "@astrojs/sitemap";
+import compress from "@playform/compress";
+import { defineConfig } from "astro/config";
+import relativeLinks from "astro-relative-links";
+import typograf from "astro-typograf";
 
 const terserOptions = {
   compress: false,
@@ -15,7 +14,7 @@ const terserOptions = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://yagee-astro-template.netlify.app/',
+  site: "https://yagee-astro-template.netlify.app/",
   devToolbar: {
     enabled: false,
   },
@@ -27,13 +26,13 @@ export default defineConfig({
   },
   integrations: [
     typograf({
-      selector: 'p, a, h1, h2, h3, div, span',
+      selector: "p, a, h1, h2, h3, div, span",
       typografOptions: {
-        locale: ['ru', 'en-US'],
-        htmlEntity: { type: 'name' },
+        locale: ["ru", "en-US"],
+        htmlEntity: { type: "name" },
       },
       typografSettings: {
-        'common/nbsp/afterShortWord': { lengthShortWord: 3 },
+        "common/nbsp/afterShortWord": { lengthShortWord: 3 },
       },
     }),
     relativeLinks(),
@@ -44,7 +43,7 @@ export default defineConfig({
         },
       },
       HTML: {
-        'html-minifier-terser': {
+        "html-minifier-terser": {
           collapseBooleanAttributes: true,
           // collapseWhitespace: true,
           // sortAttributes: true,
@@ -76,9 +75,9 @@ export default defineConfig({
     preserveScriptOrder: true,
     svgo: {
       plugins: [
-        'preset-default',
+        "preset-default",
         {
-          name: 'removeViewBox',
+          name: "removeViewBox",
           active: false,
         },
       ],

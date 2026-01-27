@@ -9,15 +9,12 @@ This is an Astro template project that provides a starting point for building we
 - Provides a pre-configured Astro project with common settings and dependencies
 - Uses `astro-capo` for managing meta tags and SEO
 - Adds a sitemap for better search engine optimization
-- Optimizes the build process using Jampack for improved performance
 - Includes Prettier and ESLint for code formatting and linting
-- Supports deployment to Netlify with a pre-configured Netlify configuration file
 
 ## Technology Stack
 
 - Astro: A static site generator for building fast and content-focused websites
 - astro-capo: A library for managing HTML head tags, including meta tags and SEO
-- Jampack: A tool for optimizing Astro builds for better performance
 - Prettier: A code formatter for maintaining consistent code style
 - ESLint: A linter for identifying and fixing problems in JavaScript code
 
@@ -29,7 +26,6 @@ This is an Astro template project that provides a starting point for building we
 | `pnpm dev`          | Starts local dev server at `localhost:4321`       |
 | `pnpm build`        | Build your production site to `./dist/`           |
 | `pnpm preview`      | Preview your build locally, before deploying      |
-| `pnpm optimize`     | Optimize build with Jampack                       |
 | `pnpm sync`         | Generates TypeScript types for all Astro modules. |
 | `pnpm prettier`     | Check code format with Prettier                   |
 | `pnpm prettier:fix` | Format codes with Prettier                        |
@@ -39,10 +35,4 @@ This is an Astro template project that provides a starting point for building we
 
 ```sh
 pnpm dlx @astrojs/upgrade
-```
-
-## Deploy
-
-```sh
-netlify deploy --prod -d dist
 ```

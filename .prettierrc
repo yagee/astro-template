@@ -5,9 +5,16 @@
       "options": {
         "parser": "astro"
       }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "parser": "css"
+      }
     }
   ],
   "plugins": ["prettier-plugin-astro", "prettier-plugin-css-order"],
   "singleAttributePerLine": true,
-  "singleQuote": true
+  "singleQuote": true,
+  "useTabs": false
 }

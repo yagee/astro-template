@@ -3,15 +3,12 @@
   "type": "module",
   "version": "5.16.15",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "optimize": "jampack ./dist",
-    "preview": "astro preview",
     "astro": "astro",
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
     "sync": "astro sync",
-    "prettier": "prettier --check --ignore-unknown '**/*'",
-    "prettier:fix": "prettier --write --ignore-unknown '**/*'",
+    "format": "pnpm exec biome format --write --files-ignore-unknown=true --verbose && prettier --write --ignore-unknown '**/*.{astro,css}'",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -34,7 +31,7 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@divriots/jampack": "^0.34.0",
+    "@biomejs/biome": "^2.3.13",
     "@eslint/js": "^9.39.2",
     "@playform/compress": "^0.2.1",
     "@typescript-eslint/parser": "^8.54.0",

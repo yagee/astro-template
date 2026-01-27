@@ -1,4 +1,4 @@
-import type { APIRoute } from 'astro';
+import type { APIRoute } from "astro";
 
 const now = new Date();
 
@@ -10,7 +10,7 @@ const robotsTxt = `
   Location: Kaliningrad, Russia
 
 /* SITE */
-  Last update: ${now.toLocaleDateString('ru-RU')}
+  Last update: ${now.toLocaleDateString("ru-RU")}
   Standards: HTML5, CSS3, ES2021
   Components: Astro, Postcss, Utopia
   Software: Windows, WSL, Ubuntu, Figma, VS Code, pnpm, Prettier, ESLint
@@ -19,7 +19,7 @@ const robotsTxt = `
 export const GET: APIRoute = () => {
   return new Response(robotsTxt, {
     headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
+      "Content-Type": "text/plain; charset=utf-8",
     },
   });
 };
