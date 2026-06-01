@@ -1,5 +1,5 @@
 dist
-pnpm-lock.yaml
+bun.lock
 .netlify
 # public
 **/*.js

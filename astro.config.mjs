@@ -1,6 +1,6 @@
 import sitemap from "@astrojs/sitemap";
 import compress from "@playform/compress";
-import { defineConfig } from "astro/config";
+import { defineConfig, svgoOptimizer } from "astro/config";
 import relativeLinks from "astro-relative-links";
 import typograf from "astro-typograf";
 
@@ -72,8 +72,7 @@ export default defineConfig({
     // removeOriginalImages(),
   ],
   experimental: {
-    preserveScriptOrder: true,
-    svgo: {
+    svgOptimizer: svgoOptimizer({
       plugins: [
         "preset-default",
         {
@@ -81,6 +80,6 @@ export default defineConfig({
           active: false,
         },
       ],
-    },
+    }),
   },
 });

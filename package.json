@@ -1,44 +1,51 @@
 {
   "name": "astro-template",
   "type": "module",
-  "version": "5.18.0",
+  "version": "6.3.7",
+  "keywords": [
+    "astro"
+  ],
+  "author": "Roman Ryzhikov",
   "scripts": {
     "astro": "astro",
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "sync": "astro sync",
-    "format": "pnpm exec biome format --write --files-ignore-unknown=true --verbose && prettier --write --ignore-unknown '**/*.{astro,css}'",
+    "format": "biome format --write --files-ignore-unknown=true --verbose && prettier --write --ignore-unknown '**/*.{astro,css}'",
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.6",
-    "@astrojs/sitemap": "^3.7.0",
-    "@playform/compress": "^0.2.1",
-    "astro": "^5.18.0",
-    "astro-capo": "^0.0.1",
-    "astro-relative-links": "^0.4.2",
-    "astro-typograf": "^3.2.1",
-    "autoprefixer": "^10.4.27",
-    "cssnano": "^7.1.2",
-    "cssnano-preset-advanced": "^7.0.10",
-    "postcss-combine-duplicated-selectors": "^10.0.3",
-    "postcss-combine-media-query": "^2.1.0",
-    "postcss-import": "^16.1.1",
-    "postcss-media-minmax": "^5.0.0",
-    "postcss-nested": "^7.0.2",
-    "postcss-sort-media-queries": "^5.2.0",
-    "postcss-utopia": "^1.1.0",
-    "typescript": "^5.9.3"
+    "@astrojs/check": "0.9.9",
+    "@astrojs/sitemap": "3.7.2",
+    "@playform/compress": "0.2.3",
+    "astro": "6.3.7",
+    "astro-capo": "0.0.1",
+    "astro-relative-links": "0.4.2",
+    "astro-typograf": "3.3.0",
+    "autoprefixer": "10.5.0",
+    "cssnano": "7.1.9",
+    "cssnano-preset-advanced": "7.0.16",
+    "postcss-combine-duplicated-selectors": "10.0.3",
+    "postcss-combine-media-query": "2.1.0",
+    "postcss-import": "16.1.1",
+    "postcss-media-minmax": "5.0.0",
+    "postcss-nested": "7.0.2",
+    "postcss-sort-media-queries": "6.6.1",
+    "postcss-utopia": "1.1.0",
+    "typescript": "6.0.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.5",
-    "@eslint/js": "^9.39.2",
-    "@typescript-eslint/parser": "^8.56.1",
-    "eslint": "^9.39.2",
-    "eslint-plugin-astro": "^1.6.0",
-    "prettier": "^3.8.1",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-css-order": "^2.2.0"
-  }
+    "@biomejs/biome": "2.4.15",
+    "@eslint/js": "9.39.2",
+    "@typescript-eslint/parser": "8.56.1",
+    "eslint": "9.39.2",
+    "eslint-plugin-astro": "1.6.0",
+    "prettier": "3.8.3",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-css-order": "2.2.0"
+  },
+  "engines": {
+    "node": "^22.0.0"
+  },
+  "packageManager": "bun@1.3.12"
 }

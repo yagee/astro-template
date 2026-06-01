@@ -7,13 +7,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "includes": [
-      "**",
-      "!!**/pnpm-lock.yaml",
-      "!!**/*.css",
-      "!!.astro",
-      "!!dist"
-    ]
+    "includes": ["**", "!!**/bun.lock", "!!**/*.css", "!!.astro", "!!dist"]
   },
   "formatter": {
     "enabled": true,
