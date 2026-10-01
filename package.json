@@ -11,7 +11,7 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "format": "biome format --write --files-ignore-unknown=true --verbose && prettier --write --ignore-unknown '**/*.{astro,css}'",
+    "format": "biome format --write --files-ignore-unknown=true --verbose",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -36,14 +36,11 @@
     "typescript": "6.0.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.14",
+    "@biomejs/biome": "2.5.15",
     "@eslint/js": "10.0.1",
     "@typescript-eslint/parser": "8.70.1",
     "eslint": "10.11.0",
-    "eslint-plugin-astro": "3.2.1",
-    "prettier": "3.9.9",
-    "prettier-plugin-astro": "1.0.1",
-    "prettier-plugin-css-order": "2.2.0"
+    "eslint-plugin-astro": "3.2.1"
   },
   "engines": {
     "node": "^22.22.3 || ^24.16.0 || >=26.3.0"

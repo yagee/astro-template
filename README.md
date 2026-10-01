@@ -9,13 +9,13 @@ This is an Astro template project that provides a starting point for building we
 - Provides a pre-configured Astro project with common settings and dependencies
 - Uses `astro-capo` for managing meta tags and SEO
 - Adds a sitemap for better search engine optimization
-- Includes Prettier and ESLint for code formatting and linting
+- Uses Biome for formatting and ESLint for linting
 
 ## Technology Stack
 
 - Astro: A static site generator for building fast and content-focused websites
 - astro-capo: A library for managing HTML head tags, including meta tags and SEO
-- Prettier: A code formatter for maintaining consistent code style
+- Biome: A code formatter for maintaining consistent code style
 - ESLint: A linter for identifying and fixing problems in JavaScript code
 
 ## Commands
@@ -27,7 +27,7 @@ This is an Astro template project that provides a starting point for building we
 | `bun run build`      | Checks types and builds the site to `./dist/` |
 | `bun run preview`    | Previews the production build locally         |
 | `bun run astro sync` | Generates TypeScript types for Astro modules  |
-| `bun run format`     | Formats code with Biome and Prettier          |
+| `bun run format`     | Formats code with Biome                       |
 | `bun run lint`       | Lints with ESLint                             |
 
 ## Upgrade

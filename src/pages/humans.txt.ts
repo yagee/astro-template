@@ -13,7 +13,7 @@ const robotsTxt = `
   Last update: ${now.toLocaleDateString("ru-RU")}
   Standards: HTML5, CSS3, ES2021
   Components: Astro, Postcss, Utopia
-  Software: Windows, WSL, Ubuntu, Figma, VS Code, pnpm, Prettier, ESLint
+  Software: Windows, WSL, Ubuntu, Figma, VS Code, Bun, Biome, ESLint
 `.trim();
 
 export const GET: APIRoute = () => {

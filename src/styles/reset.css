@@ -59,8 +59,8 @@ h6 {
   text-wrap: balance;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -103,7 +103,7 @@ select {
 }
 
 button,
-[role='button'] {
+[role="button"] {
   cursor: pointer;
 }
 

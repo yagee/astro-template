@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "includes": ["**", "!!**/bun.lock", "!!**/*.css", "!!.astro", "!!dist"]
+    "includes": ["**", "!!**/bun.lock", "!!.astro", "!!dist"]
   },
   "formatter": {
     "enabled": true,
@@ -25,6 +25,18 @@
       "quoteStyle": "double"
     }
   },
+  "css": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "html": {
+    "experimentalFullSupportEnabled": true,
+    "formatter": {
+      "enabled": true,
+      "indentScriptAndStyle": true
+    }
+  },
   "assist": {
     "enabled": true,
     "actions": {
@@ -36,9 +48,6 @@
   "overrides": [
     {
       "includes": ["**/*.astro"],
-      "formatter": {
-        "enabled": false
-      },
       "linter": {
         "rules": {
           "style": {
@@ -48,6 +57,26 @@
           "correctness": {
             "noUnusedVariables": "off",
             "noUnusedImports": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/utopia.css"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noUnknownAtRules": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/reset.css"],
+      "linter": {
+        "rules": {
+          "complexity": {
+            "noImportantStyles": "off"
           }
         }
       }

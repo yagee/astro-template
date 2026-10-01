@@ -1,15 +1,15 @@
 ---
-import Meta from '@components/Meta/Meta.astro';
-import { Head } from 'astro-capo';
+import Meta from "@components/Meta/Meta.astro";
+import { Head } from "astro-capo";
 
-import '../styles/global.css';
+import "../styles/global.css";
 
 interface Props {
   title?: string;
   description?: string;
 }
 
-const { title = 'Title', description = 'Description' } = Astro.props;
+const { title = "Title", description = "Description" } = Astro.props;
 ---
 
 <!doctype html>

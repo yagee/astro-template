@@ -1,5 +1,5 @@
 ---
-import { Image, Picture } from 'astro:assets';
+import { Image, Picture } from "astro:assets";
 
 interface Props {
   title: string;
@@ -8,8 +8,8 @@ interface Props {
 
 const { title, body } = Astro.props;
 
-import pic from './pic.png';
-import transparentBadge from './transparent-badge.png';
+import pic from "./pic.png";
+import transparentBadge from "./transparent-badge.png";
 ---
 
 <div class="card">
@@ -34,7 +34,7 @@ import transparentBadge from './transparent-badge.png';
       position="top"
       width={200}
       height={200}
-      formats={['avif', 'webp']}
+      formats={["avif", "webp"]}
       priority
     />
     <Picture
@@ -42,11 +42,11 @@ import transparentBadge from './transparent-badge.png';
       alt="A description of my image."
       width={200}
       height={200}
-      formats={['avif', 'webp']}
+      formats={["avif", "webp"]}
       densities={[2, 3]}
-      loading={'eager'}
-      decoding={'sync'}
-      fetchpriority={'high'}
+      loading={"eager"}
+      decoding={"sync"}
+      fetchpriority={"high"}
     />
     {/* JPEG has no transparency, so background fills the badge's clear corners. */}
     <Image

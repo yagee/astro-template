@@ -1,9 +1,0 @@
-dist
-bun.lock
-.netlify
-# public
-**/*.js
-**/*.cjs
-**/*.mjs
-**/*.json
-**/*.ts

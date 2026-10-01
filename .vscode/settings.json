@@ -6,11 +6,13 @@
   },
   "workbench.colorTheme": "Houston",
   "editor.defaultFormatter": "biomejs.biome",
-  "prettier.documentSelectors": ["**/*.astro", "**/*.css", "**/*.pcss"],
   "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[postcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   }
 }
