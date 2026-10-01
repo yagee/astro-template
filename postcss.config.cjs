@@ -2,7 +2,7 @@ module.exports = {
   plugins: [
     require("postcss-utopia"),
     require("postcss-import"),
-    require("postcss-nested"),
+    require("postcss-nested").default,
     require("autoprefixer"),
     require("postcss-media-minmax"),
     require("postcss-sort-media-queries"),

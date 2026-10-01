@@ -13,12 +13,8 @@ import transparentBadge from './transparent-badge.png';
 ---
 
 <div class="card">
-  <h1>
-    {title}
-  </h1>
-  <p>
-    {body}
-  </p>
+  <h1>{title}</h1>
+  <p>{body}</p>
   <div class="pics">
     <Image
       src={pic}
@@ -52,9 +48,7 @@ import transparentBadge from './transparent-badge.png';
       decoding={'sync'}
       fetchpriority={'high'}
     />
-    {
-      /* JPEG has no transparency, so background fills the badge's clear corners. */
-    }
+    {/* JPEG has no transparency, so background fills the badge's clear corners. */}
     <Image
       src={transparentBadge}
       alt="Purple badge with a white check mark"
