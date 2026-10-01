@@ -22,6 +22,7 @@ import pic from './pic.png';
     <Image
       src={pic}
       alt="A description of my image."
+      layout="constrained"
       fit="cover"
       position="top"
       width={200}
@@ -31,6 +32,7 @@ import pic from './pic.png';
     <Picture
       src={pic}
       alt="A description of my image."
+      layout="constrained"
       fit="cover"
       position="top"
       width={200}
@@ -44,7 +46,7 @@ import pic from './pic.png';
       width={200}
       height={200}
       formats={['avif', 'webp']}
-      densities={[1, 2, 3]}
+      densities={[2, 3]}
       loading={'eager'}
       decoding={'sync'}
       fetchpriority={'high'}
@@ -59,6 +61,7 @@ import pic from './pic.png';
 
   .pics {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 1rem;
   }
 </style>

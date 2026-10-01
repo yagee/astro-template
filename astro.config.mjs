@@ -15,6 +15,7 @@ const terserOptions = {
 // https://astro.build/config
 export default defineConfig({
   site: "https://yagee-astro-template.netlify.app/",
+  compressHTML: true,
   devToolbar: {
     enabled: false,
   },

@@ -20,19 +20,18 @@ This is an Astro template project that provides a starting point for building we
 
 ## Commands
 
-| Command             | Action                                            |
-| :------------------ | :------------------------------------------------ |
-| `pnpm i`            | Installs dependencies                             |
-| `pnpm dev`          | Starts local dev server at `localhost:4321`       |
-| `pnpm build`        | Build your production site to `./dist/`           |
-| `pnpm preview`      | Preview your build locally, before deploying      |
-| `pnpm sync`         | Generates TypeScript types for all Astro modules. |
-| `pnpm prettier`     | Check code format with Prettier                   |
-| `pnpm prettier:fix` | Format codes with Prettier                        |
-| `pnpm lint`         | Lint with ESLint                                  |
+| Command              | Action                                        |
+| :------------------- | :-------------------------------------------- |
+| `bun install`        | Installs dependencies                         |
+| `bun run dev`        | Starts local dev server at `localhost:4321`   |
+| `bun run build`      | Checks types and builds the site to `./dist/` |
+| `bun run preview`    | Previews the production build locally         |
+| `bun run astro sync` | Generates TypeScript types for Astro modules  |
+| `bun run format`     | Formats code with Biome and Prettier          |
+| `bun run lint`       | Lints with ESLint                             |
 
 ## Upgrade
 
 ```sh
-pnpm dlx @astrojs/upgrade
+bunx @astrojs/upgrade
 ```
