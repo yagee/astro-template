@@ -9,6 +9,7 @@ interface Props {
 const { title, body } = Astro.props;
 
 import pic from './pic.png';
+import transparentBadge from './transparent-badge.png';
 ---
 
 <div class="card">
@@ -50,6 +51,17 @@ import pic from './pic.png';
       loading={'eager'}
       decoding={'sync'}
       fetchpriority={'high'}
+    />
+    {
+      /* JPEG has no transparency, so background fills the badge's clear corners. */
+    }
+    <Image
+      src={transparentBadge}
+      alt="Purple badge with a white check mark"
+      format="jpeg"
+      background="#f2e9ff"
+      width={200}
+      height={200}
     />
   </div>
 </div>
