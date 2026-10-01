@@ -1,7 +1,7 @@
 {
   "name": "astro-template",
   "type": "module",
-  "version": "6.4.2",
+  "version": "6.4.8",
   "keywords": [
     "astro"
   ],
@@ -18,7 +18,7 @@
     "@astrojs/check": "0.9.9",
     "@astrojs/sitemap": "3.7.3",
     "@playform/compress": "0.2.3",
-    "astro": "6.4.2",
+    "astro": "6.4.8",
     "astro-capo": "0.0.1",
     "astro-relative-links": "0.4.2",
     "astro-typograf": "3.3.0",
